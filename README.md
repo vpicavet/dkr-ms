@@ -4,7 +4,7 @@ A MapServer Docker setup
 Presentation
 ------------
 
-This Docker image is a container with a MapServer Setup, featuring the MapServer suite.It is based on Ubuntu 14.04.
+This Docker image is a container with a MapServer Setup, featuring the MapServer suite.It is based on Ubuntu 14.04 and UbuntuGIS packages.
 
 Build and/or run the container
 ------------------------------
