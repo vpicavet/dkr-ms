@@ -14,13 +14,13 @@ Git clone this repository to get the Dockerfile, and cd to it.
 You can build the image with :
 
 ```sh
-sudo docker.io build -t oslandia/vws-ms .
+sudo docker.io build -t oslandia/dkr-ms .
 ```
 
 Run the container with :
 
 ```sh
-sudo docker.io run --rm -P --name vws-ms-test oslandia/vws-ms /sbin/my_init
+sudo docker.io run --rm -P --name dkr-ms-test oslandia/dkr-ms /sbin/my_init
 ```
 
 Access the server
@@ -31,7 +31,7 @@ Once the container run, you can access MapServer and MapCache services. You need
 ```sh
 $ sudo docker.io ps
 CONTAINER ID        IMAGE                    COMMAND             CREATED             STATUS              PORTS                   NAMES
-a2d16f1a0540        oslandia/vws-ms:latest   /sbin/my_init       23 seconds ago      Up 22 seconds       0.0.0.0:49157->80/tcp   vws-ms-test
+a2d16f1a0540        oslandia/dkr-ms:latest   /sbin/my_init       23 seconds ago      Up 22 seconds       0.0.0.0:49157->80/tcp   dkr-ms-test
 ```
 
 SSH connection
@@ -39,7 +39,7 @@ SSH connection
 
 This is for a temporary connexion (insecure key). Start a container with --enable-insecure-key:
 
-docker run -rm -P --name vws-ms-test oslandia/vws-ms /sbin/my_init --enable-insecure-key
+docker run -rm -P --name dkr-ms-test oslandia/dkr-ms /sbin/my_init --enable-insecure-key
 
 Find out the ID of the container that you just ran:
 
