@@ -1,6 +1,6 @@
 DEPLOYFILES=Dockerfile apache2.sh
 VERSION = ` grep Version Dockerfile | cut -d " " -f 3 `
-ZIPNAME = dkr-vws-ms_$(VERSION).zip
+ZIPNAME = dkr-ms_$(VERSION).zip
 
 all: zip
 
